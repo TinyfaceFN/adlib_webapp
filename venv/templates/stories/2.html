@@ -1,0 +1,21 @@
+{%extends 'base.html'%}
+{% block body %}
+<h3>Story 2: A day at the park</h3>
+<p>Please fill out the below form to fill in your adlib!</p>
+<form action="" method="post" id="adlibform">
+    <input type="text" name="adjective" placeholder="adjective"><br>
+    <input type="text" name="noun" placeholder="noun"><br>
+    <input type="text" name="verb" placeholder="verb"><br>
+    <input type="text" name="place" placeholder="place"><br>
+    <button>submit </button><br>
+</form>
+<h4>base story:</h4>
+<p>Today, I went to the park with my (adjective) friend. We brought a (noun) and had a lot of fun (verb) in the (place). It was the best day ever!
+</p>
+
+<h4>Your story!:</h4>
+<p>Today, I went to the park with my {{session['adjective']}} friend. We brought a 
+    {{session['noun']}} and had a lot of fun {{session['verb']}} in the {{session['place']}} 
+    It was the best day ever!
+</p>
+{% endblock %}

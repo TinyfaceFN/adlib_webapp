@@ -1,0 +1,12 @@
+{%extends 'base.html'%}
+{% block body %}
+<ol>
+    {% for x in stories %}
+    <h3>
+        <a href='/stories/{{x.id}}'>
+    <li> {{x.title}}:</a>  <br> {{x.paragraph}}
+    </li>
+    {%endfor%}
+    </h3>
+</ol>
+{% endblock %}

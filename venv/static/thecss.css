@@ -1,0 +1,31 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-color: rgba(207, 156, 89, 0.385);
+    display: flexbox;  
+    align-content: center;
+ 
+}
+
+header{
+    width: 100%;
+    background-color: rgba(207, 156, 89, 0.619);
+    height: 5%;
+}
+nav{
+    align-self: center;
+    width: 100%;
+    display: inline-block;
+}
+a{
+    text-decoration: none;
+    font-size: larger;
+    font-weight: 800;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: black;
+    margin: 0;
+    padding: 0;
+}
+a:hover{
+    color: white;
+}

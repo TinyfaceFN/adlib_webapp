@@ -1,0 +1,26 @@
+{%extends 'base.html'%}
+{% block body %}
+<h3>Story 1:A day at the zoo</h3>
+<p>Please fill out the below form to fill in your adlib!</p>
+<form action="" method="post" id="adlibform">
+    <input type="text" name="adjective" placeholder="adjective"><br>
+    <input type="text" name="animal" placeholder="animal"><br>
+    <input type="text" name="verb" placeholder="verb"><br>
+    <input type="text" name="adjective2" placeholder="adjective2"><br>
+    <input type="text" name="adjective3" placeholder="adjective3"><br>
+    <input type="text" name="animal2" placeholder="animal2"><br>
+    <input type="text" name="plural_noun" placeholder="Plural noun"><br>
+    <button>submit </button><br>
+</form>
+<h4>base story:</h4>
+<p>Today, I went to the zoo with my (adjective) friend. 
+    We saw a (adjective2) (animal) that was (verb)
+     in its enclosure. Then, we watched a (adjective3) (animal2)
+      show, where the animals performed (plural_noun) tricks. </p>
+
+<h4>Your story!:</h4>
+<p>Today, I went to the zoo with my {{session['adjective']}} friend. 
+    We saw a {{session['adjective2']}} {{session['animal']}} that was {{session['verb']}}
+     in its enclosure. Then, we watched a {{session['adjective3']}} {{session['animal2']}}
+      show, where the animals performed {{session['plural_noun']}} tricks. </p>
+{% endblock %}
